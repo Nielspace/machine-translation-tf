@@ -46,7 +46,7 @@ params = {
 run["parameters"] = params
 
 
-input_texts, target_texts = data_preprocessing('/Users/nielspace/Downloads/archive/fra.txt')
+input_texts, target_texts = data_preprocessing('./data/fra.txt')
 
 data = create_dataset(input_texts, target_texts, len(input_texts))
 
