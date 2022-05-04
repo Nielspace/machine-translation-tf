@@ -1,0 +1,30 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "Nileshs-MacBook-Air.local"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/Users/nielspace/Documents/Deep Learning/machine translation/train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1651657305.0486941}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 16.0, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 22.3, "step": null, "ts": 1651657305.050334}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.312759399414062, "step": null, "ts": 1651657305.050334}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "VALIDATION_SIZE"], "value": 0.1}, "version": 16}
+{"obj": {"type": "AssignInt", "path": ["parameters", "BATCH_SIZE"], "value": 32}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["parameters", "MAX_EPOCHS"], "value": 25}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["parameters", "EMBED_DIM"], "value": 66}, "version": 19}
+{"obj": {"type": "AssignInt", "path": ["parameters", "DENSE_DIM"], "value": 66}, "version": 20}
+{"obj": {"type": "AssignInt", "path": ["parameters", "NUM_HEADS"], "value": 2}, "version": 21}
+{"obj": {"type": "AssignInt", "path": ["parameters", "X_LEN"], "value": 32}, "version": 22}
+{"obj": {"type": "AssignInt", "path": ["parameters", "Y_LEN"], "value": 66}, "version": 23}
+{"obj": {"type": "AssignInt", "path": ["parameters", "NUM_ENCODER_TOKENS"], "value": 48}, "version": 24}
+{"obj": {"type": "AssignInt", "path": ["parameters", "NUM_DECODER_TOKENS"], "value": 64}, "version": 25}
+{"obj": {"type": "AssignString", "path": ["parameters", "OPTIMIZER"], "value": "adam"}, "version": 26}
+{"obj": {"type": "AssignString", "path": ["parameters", "LOSS"], "value": "categorical_crossentropy"}, "version": 27}
+{"obj": {"type": "AssignString", "path": ["parameters", "METRICS"], "value": "accuracy"}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "", "step": null, "ts": 1651657305.1443431}]}, "version": 29}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1651657305.14456}]}, "version": 30}

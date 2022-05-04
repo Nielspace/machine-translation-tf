@@ -1,0 +1,45 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "Nileshs-MacBook-Air.local"}, "version": 3}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 4}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stdout"]}, "version": 5}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "stderr"]}, "version": 6}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "train.py"}, "version": 7}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/Users/nielspace/Documents/Deep Learning/machine translation/train.py"], "reset": "False"}, "version": 8}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/you-should-know/what-can-you-log-and-display#hardware-consumption\n", "step": null, "ts": 1651658510.2152781}]}, "version": 9}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 10}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "cpu"]}, "version": 11}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "memory"], "min": 0.0, "max": 16.0, "unit": "GB"}, "version": 12}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "memory"]}, "version": 13}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "cpu"], "values": [{"value": 23.3, "step": null, "ts": 1651658510.216667}]}, "version": 14}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "memory"], "values": [{"value": 10.704574584960938, "step": null, "ts": 1651658510.216667}]}, "version": 15}
+{"obj": {"type": "AssignFloat", "path": ["parameters", "VALIDATION_SIZE"], "value": 0.1}, "version": 16}
+{"obj": {"type": "AssignInt", "path": ["parameters", "BATCH_SIZE"], "value": 32}, "version": 17}
+{"obj": {"type": "AssignInt", "path": ["parameters", "MAX_EPOCHS"], "value": 25}, "version": 18}
+{"obj": {"type": "AssignInt", "path": ["parameters", "EMBED_DIM"], "value": 66}, "version": 19}
+{"obj": {"type": "AssignInt", "path": ["parameters", "DENSE_DIM"], "value": 66}, "version": 20}
+{"obj": {"type": "AssignInt", "path": ["parameters", "NUM_HEADS"], "value": 2}, "version": 21}
+{"obj": {"type": "AssignInt", "path": ["parameters", "X_LEN"], "value": 32}, "version": 22}
+{"obj": {"type": "AssignInt", "path": ["parameters", "Y_LEN"], "value": 66}, "version": 23}
+{"obj": {"type": "AssignInt", "path": ["parameters", "NUM_ENCODER_TOKENS"], "value": 48}, "version": 24}
+{"obj": {"type": "AssignInt", "path": ["parameters", "NUM_DECODER_TOKENS"], "value": 64}, "version": 25}
+{"obj": {"type": "AssignString", "path": ["parameters", "OPTIMIZER"], "value": "adam"}, "version": 26}
+{"obj": {"type": "AssignString", "path": ["parameters", "LOSS"], "value": "categorical_crossentropy"}, "version": 27}
+{"obj": {"type": "AssignString", "path": ["parameters", "METRICS"], "value": "accuracy"}, "version": 28}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker Nileshs-MacBook-Air.local.", "step": null, "ts": 1651658510.3217869}, {"value": "Marking run as failed", "step": null, "ts": 1651658510.3217869}, {"value": "Traceback:", "step": null, "ts": 1651658510.3217869}, {"value": "  File \"/Users/nielspace/Documents/Deep Learning/machine translation/train.py\", line 51, in <module>\n    data = create_dataset(len(input_texts))\n", "step": null, "ts": 1651658510.3217869}, {"value": "  File \"/Users/nielspace/Documents/Deep Learning/machine translation/data_preprocessing.py\", line 43, in create_dataset\n    for e, f in zip(input_texts[:num_rows], target_texts[:num_rows]):\n", "step": null, "ts": 1651658510.3217869}, {"value": "name 'input_texts' is not defined", "step": null, "ts": 1651658510.3217869}]}, "version": 29}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 30}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1651658510.322303}]}, "version": 31}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/nielspace/Documents/Deep Learning/machine translation/train.py\", line 51, in <module>\n", "step": null, "ts": 1651658510.3223581}]}, "version": 32}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1651658510.3225}]}, "version": 33}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "data = create_dataset(len(input_texts))", "step": null, "ts": 1651658510.322546}]}, "version": 34}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1651658510.322589}]}, "version": 35}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "  File \"/Users/nielspace/Documents/Deep Learning/machine translation/data_preprocessing.py\", line 43, in create_dataset\n", "step": null, "ts": 1651658510.322633}]}, "version": 36}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1651658510.322732}]}, "version": 37}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "for e, f in zip(input_texts[:num_rows], target_texts[:num_rows]):", "step": null, "ts": 1651658510.322772}]}, "version": 38}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1651658510.322816}]}, "version": 39}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "NameError", "step": null, "ts": 1651658510.322857}]}, "version": 40}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1651658510.322894}]}, "version": 41}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "name 'input_texts' is not defined", "step": null, "ts": 1651658510.322931}]}, "version": 42}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1651658510.3229702}]}, "version": 43}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "", "step": null, "ts": 1651658510.323115}]}, "version": 44}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1651658510.3231869}]}, "version": 45}
