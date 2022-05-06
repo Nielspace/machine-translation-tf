@@ -1,1 +1,8 @@
 numpy==1.22.3
+pandas
+tensorflow
+neptune-client
+neptune-tensorflow-keras
+scikit-learn
+matplotlib
+seaborn
