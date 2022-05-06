@@ -6,3 +6,4 @@ neptune-tensorflow-keras
 scikit-learn
 matplotlib
 seaborn
+tqdm
