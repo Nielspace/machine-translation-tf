@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/machine-translation-tf/github.com/Nielspace/machine-translation-tf:$SHORT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/machine-translation-tf', '.']
 
