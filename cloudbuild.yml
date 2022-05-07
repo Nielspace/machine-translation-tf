@@ -1,7 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/machine-translation/github.com/Nielspace/machine-translation-tf', '.']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/machine-translation/github.com/Nielspace/machine-translation-tf']
+  args: ['build', '-t', 'gcr.io/machine-translation-tf/github.com/Nielspace/machine-translation-tf', '.']
 
